@@ -1,4 +1,4 @@
-# Analyseur trafic réseau
+# Visualisateur trafic réseau
 
 
 Ce projet a pour but de creer un visualisateur de traffic avec une trame sous un fichier en format txt.
