@@ -26,3 +26,7 @@ Dans le dossier src, il y a 4 dossiers:
     -Le dossier viewer qui permet d'afficher le visualisateur dans une fenetre dans une fentre graphique .La fenetre graphique à été realisé ave WindowBuilder.
     Contient les fichiers Fenetre , FenetreInit , TableMode , logoSU
     
+    
+Afiichage graphique du visualisateur de trame
+
+![image](https://user-images.githubusercontent.com/79419364/211219084-14cd6803-0021-4825-ac8f-cd3d0e828d54.png)
