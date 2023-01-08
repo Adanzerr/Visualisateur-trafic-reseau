@@ -1,0 +1,36 @@
+Prerequis : 
+-Java 10 ou superieur
+-Java awt / SWING est necessaire pour l'affichage graphique du visualisateur.
+-commande make 
+
+Ce programme neccessite un dossier /bin assurer vous de l'avoir creer dans le repertoire VisualisateurFinal si il n'est pas deja présent  en faisant:
+    $~mkdir bin
+
+Pour executer ce programme ecrire sur un terminal la commande suivante :
+    $~make visualisateur
+
+Si la commande make ne fonctionne pas ecrire dans le terminal à l'emplacement du repertoire VisualisateurFinal:
+
+    $~javac -sourcepath src -d bin ./src/exception/*.java ./src/protocole/*.java ./src/traitement/*.java ./src/viewer/*.java ./src/main/*.java
+
+	$~java -cp bin main.Main
+
+Lorsque la fenetre est apparu vous pourrez choisir 2 possibilite:
+
+    -le path du .txt à inserer dans le champs texte et puis appuyer sur le bouton decoder.
+    - Une nouvelle fenetre s'ouvre ou vous pourrer choisir le fichier trace (txt) à analyser
+
+     si le fichier est errone ou tronque un message d'erreur s'affichera 
+
+Une fois les trames analysé , y a un bouton sauvegarder qui permet de sauvegarder les trames sous format txt.
+
+Concernant le filtre, on peut l'utiliser en indicant dans le champs a gauche du bouton filtre ceux que l'on veut filtre,on peux filtrer :
+
+    -le protocole 
+    -l'addresse ip source 
+    -on peut combiner les 2 filtres en faisant un "&&" (ET logique) ou "||" (OU logique).
+
+Exemple de filtre:
+
+    On veut filtrer une ip 196.165.132.4 et un protocole http, on écrit:
+    196.165.132.4 && http   dans la barre de filtre 
